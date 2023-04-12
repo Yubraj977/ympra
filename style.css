@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+}
+/* body{
+
+} */
+.section1{
+  background: rgb(222, 160, 160);
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--black);
+  overflow-x: hidden;
+  
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-left: var(--body-margin);
+  margin-right: var(--body-margin);
+ 
+}
+.nav-links{
+  display: flex;
+  gap: 2.8rem;
+justify-content: center;
+margin-right: 2rem;
+align-items: center;
+padding-top: 0.75rem;
+font-size: 1.3rem;
+  
+ 
+
+}
+li{
+list-style: none;
+}
+
+.header-right ul li a{
+text-decoration: none;
+color: var(--white);
+
+}
+.logo{
+  color: var(--white);
+   stroke: var(--logo-stroke);
+   
+   
+   font-size: 2rem;
+
+}
+
+.toggle-btn{
+  display: none;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+}
+
+
+
+
+
+.home-content{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 3rem;
+  
+}
+.home-content h5{
+  color: var(--primary);
+}
+.home-content h1{
+font-size: 4rem;
+text-align: center;
+color: var(--white);
+}
+.home-content p{
+font-size: 1.4rem;
+text-align: center;
+color: var(--white);
+}
+.home-content button{
+  background-image:var(--button-style);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* .ellipse{
+  position: absolute;
+  width: 468px;
+  height: 469px;
+  background: #E01A4F;
+  opacity: 0.5;
+  filter: blur(164px);
+  z-index: 1;
+ 
+  
+}
+#ellipse-1{
+  left: -170px;
+  top: 110px;
+} */
+
+/* #ellipse-2{
+
+left: 860px;
+top: 72px;
+
+} */
+
+
+
+
+@media(max-width:518px){
+.toggle-btn{
+  display: flex;
+}
+.header-right{
+  width: 100%;
+}
+.nav-links li{
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links{
+  display: none;
+  flex-direction: column;
+  
+  width: 100%;
+}
+.nav-links.active{
+  display: flex;
+  z-index: 5;
+}
+header{
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ellipse{
+  display: none;
+}
+
+}
